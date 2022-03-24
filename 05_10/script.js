@@ -100,3 +100,24 @@ newArticle.setAttribute("id", "everyday");
 newArticle.innerHTML = content;
 
 main.append(newArticle);
+
+//create Nav Bar
+
+
+const headerContent = `
+<ul>
+      <li> Home</li>
+      <li> Products</li>
+      <li> About</li>
+       <li> Featured</li>
+      <li> Contact</li>
+     
+
+</ul>
+`;
+
+const header = document.createElement("div")
+header.setAttribute("id", "navBar")
+
+header.innerHTML = headerContent;
+main.append(header)
