@@ -20,7 +20,7 @@ class Backpack {
     strapLengthR,
     lidOpen,
     dateAcquired,
-    image
+  
   ) {
     this.name = name;
     this.volume = volume;
@@ -32,7 +32,7 @@ class Backpack {
     };
     this.lidOpen = lidOpen;
     this.dateAcquired = dateAcquired;
-    this.image = image;
+    
   }
   toggleLid(lidStatus) {
     this.lidOpen = lidStatus;
@@ -65,7 +65,7 @@ const everydayPack = new Backpack(
 const content = `
   
     <figure class="backpack__image">
-      <img src=${everydayPack.image} alt="" />
+      <img src="" alt="" />
     </figure>
     <h1 class="backpack__name">Everyday Backpack</h1>
     <ul class="backpack__features">
