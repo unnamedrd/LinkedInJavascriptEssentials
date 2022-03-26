@@ -43,3 +43,14 @@ let headerDiv = document.createElement('H1');
 }
 
 createHeader("Functions Are Fun")
+
+
+const createFooter = (str) =>{
+  let headerDiv = document.createElement("H2");
+  let main = document.querySelector("main");
+
+  headerDiv.innerHTML = str;
+  main.appendChild(headerDiv);
+};
+
+createFooter("They just take practice!")
