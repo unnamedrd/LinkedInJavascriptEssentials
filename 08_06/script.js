@@ -32,3 +32,14 @@ function createContent() {
 };
 
 createContent();
+
+//function expression 
+const createHeader = function (str) {
+let headerDiv = document.createElement('H1');    
+    let main = document.querySelector("main");
+    
+    headerDiv.innerHTML = str
+    main.appendChild(headerDiv)
+}
+
+createHeader("Functions Are Fun")
