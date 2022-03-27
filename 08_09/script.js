@@ -23,7 +23,7 @@ const frogpack = {
     right: 10,
   },
   lidOpen: false,
-  image: "../../assets/images/frog.svg",
+  image: "../../assets/images/frog.jpg",
   toggleLid: function (lidStatus) {
     this.lidOpen = lidStatus;
   },
@@ -57,3 +57,14 @@ const content = `
       }</span></li>
     </ul>  
 `;
+
+
+function popContent(content) {
+    let main = document.querySelector('main')
+    let articleCon = document.createElement("article")
+    articleCon.innerHTML = content
+    main.appendChild(articleCon)
+
+}
+
+popContent(content)
