@@ -58,13 +58,29 @@ const content = `
     </ul>  
 `;
 
-
+//main function 
 function popContent(content) {
     let main = document.querySelector('main')
     let articleCon = document.createElement("article")
     articleCon.innerHTML = content
     main.appendChild(articleCon)
-
+    photoFunction();
+    return articleCon
+    //call photoFunction
 }
 
 popContent(content)
+
+//helper function 
+
+function photoFunction() {
+    //fig caption with img and
+    let figure= document.createElement("figure");
+    let photo = `
+         frogpack.image
+    `;
+    figure.innerHTML = photo
+
+    return figure;
+}
+
