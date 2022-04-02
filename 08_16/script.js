@@ -5,6 +5,8 @@
  * - Set the inner HTML of the article to the existing HTML output provided in const content.
  * - Append each backpack object to the <main> element.
  */
+
+ //missing components Backpack
 import Backpack from "./components/Backpack.js";
 
 const everydayPack = new Backpack(
